@@ -17,7 +17,7 @@
 }
 
 .grid-item-2 {
-    transform: translate(225px, -290px);
+    transform: translate(225px, 200px);
     color:purple;
 }
 
@@ -129,6 +129,7 @@ div.horizontal{
         font-weight:bold;
         padding:10px 20px;
      }
+     
     
      .controls {
         display:flex;
