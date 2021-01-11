@@ -1,0 +1,141 @@
+*, *::before, *::after {
+
+    box-sizing:border-box;
+    font-family: arial;
+    
+    }
+    
+    :root {
+        --hue-neutral:200;
+        --hue-wrong: 0;
+        --hue-correct: 145;
+    
+    }
+.grid-item-1 {
+    transform: translate(27px, -211px);
+    color:purple;
+}
+
+.grid-item-2 {
+    transform: translate(225px, -290px);
+    color:purple;
+}
+
+div.horizontal{
+    margin:0;
+    padding:0;
+    
+    
+
+
+}
+    
+
+
+
+/*
+
+    transform: translate(275px, 100px);
+*/
+
+
+
+
+    
+    body {
+    background-color: white;
+    padding: 0;
+    margin:0;
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background-color: hsl(var(--hue), 100%, 20%);
+    border:solid;
+    
+    }
+    
+    .btn.correct{
+       background-color:violet;
+       color:white;
+    
+    }
+    
+    .btn.wrong{
+        background-color:purple;
+    
+    }
+    .container{
+    width:1000px;
+    max-width: 80%;
+    height:220px;
+    background-color: white;
+    border-radius:5px;
+    padding:10px;
+    
+    
+    }
+    
+    .btn-grid {
+        display:grid;
+        grid-template-rows:repeat(2,auto);
+        gap: 10px;
+        margin: 20px 0;
+        justify-content:left;
+        
+    }
+    
+    .btn{
+      --hue: var(--hue-neutral);
+      background-color: purple;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: white;
+      display:flex;
+      outline: none;
+      justify-content: end;
+      
+      
+    
+    }
+    
+    .btn:hover{
+      border-color:rgb(218, 44, 189);
+    
+    }
+    
+    .question {
+        font-size: xx-large;
+        font-weight:bolder;
+        
+        
+
+    }
+       
+
+    
+    
+    .btn.correct {
+        --hue: var(--hue-correct);
+        color: white;
+    }
+    
+    .btn.wrong {
+        --hue: var(--hue-wrong);
+    }
+     .start-btn, .next-btn {
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:10px 20px;
+     }
+    
+     .controls {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+     }
+    
+     .hide{
+         display:none;
+     }
